@@ -25,7 +25,7 @@ wget -O hextool.bash https://ros.dl.hexman.cn/hextool.bash && bash hextool.bash
 ```bash
 cd ~/sdk_echo_ws/src/demo/demo/
 rm -rf demo_general_chassis # 刪去原有demo，或者mv demo_general_chassis demo_general_chassis.old
-git clone https://github.com/IsaacMak2009/hexman_ros_echo.git demo_general_chassis
+git clone https://github.com/MakkCH/hexman_ros_echo.git demo_general_chassis
 ```
 下載完成後，回到`~/sdk_echo_ws`構建包
 ```bash
