@@ -1,6 +1,6 @@
 # HEXMAN_ROS_使用指南
 
-**Disclaimer: 本項目並非由HERMAN尋界機械人開發、認可、贊助或附屬。**
+**Disclaimer: 本項目並非由HEXMAN尋界機械人開發、認可、贊助或附屬。**
 
 官方SDK只提供了纯底盘ROS开发包，而導航工具（i.e. SLAM, Move base 和 導航）則沒有提供。需要自行開發
 
