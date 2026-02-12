@@ -14,11 +14,20 @@
 ### 1.1. 安裝官方SDK
 > 如之前已安裝過，可以則跳過
 
-於命令行執行以下命令：
+參照 [文檔](https://oodocs.hexfellow.com/ROS/ROS-SDK/) 進行安裝
+你可以透過以下命令進行安裝（以`ros-noetic`和`sdk_echo_ws`為例）
 ```bash
-wget -O hextool.bash https://ros.dl.hexman.cn/hextool.bash && bash hextool.bash
+wget https://oodocs.hexfellow.com/pkg/sdk_echo_ws.zip
+unzip sdk_echo_ws.zip -d ~
+cd ~/sdk_echo_ws
+python3 ./src/base/xpkg_comm/scripts/script_init.py
+sudo apt install ros-noetic-teleop-twist-keyboard -y
 ```
-參照 https://docs.hexman.cn/ROS/ROS-SDK/#ros 進行安裝
+之後建議重啟，然後
+```bash
+cd ~/sdk_echo_ws
+python3 ./src/base/xpkg_msgs/tools/hex-pkg-init.py
+```
 
 ### 1.2. 安裝本項目
 下面以`ECHO SDK`為例
@@ -31,6 +40,11 @@ git clone https://github.com/MakkCH/hexman_ros_echo.git demo_general_chassis
 ```bash
 cd ~/sdk_echo_ws
 catkin_make
+```
+
+構建完成後，把這行代碼加入`~/.zshrc` 或 `.bashrc`：
+```bash
+source ~/sdk_echo_ws/devel/
 ```
 
 ## 2. 啟動底盤
