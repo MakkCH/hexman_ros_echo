@@ -44,7 +44,9 @@ catkin_make
 
 構建完成後，把這行代碼加入`~/.zshrc` 或 `.bashrc`：
 ```bash
-source ~/sdk_echo_ws/devel/
+source ~/sdk_echo_ws/devel/setup.bash --extend # bash
+source ~/sdk_echo_ws/devel/setup.zsh --extend # zsh
+
 ```
 
 ## 2. 啟動底盤
